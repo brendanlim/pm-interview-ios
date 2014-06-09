@@ -17,7 +17,6 @@
 		46D4F0981942635500D20017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D4F0961942635500D20017 /* Main.storyboard */; };
 		46D4F09A1942635500D20017 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D4F0991942635500D20017 /* Images.xcassets */; };
 		46D4F0A61942635500D20017 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4F0A51942635500D20017 /* ProductTests.swift */; };
-		46E186F81943A24800C75240 /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E186F71943A24800C75240 /* RQShineLabel.m */; };
 		46E186FC1943F40600C75240 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E186FB1943F40600C75240 /* Constants.swift */; };
 		46E186FE1943F57100C75240 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E186FD1943F57100C75240 /* Questions.swift */; };
 		46F8B0161943FCED00FB5BE7 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8B0151943FCED00FB5BE7 /* NavButton.swift */; };
@@ -49,8 +48,6 @@
 		46D4F0A41942635500D20017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D4F0A51942635500D20017 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		46E186F51943A24700C75240 /* Product-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product-Bridging-Header.h"; sourceTree = "<group>"; };
-		46E186F61943A24800C75240 /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RQShineLabel.h; path = Vendors/RQShineLabel/RQShineLabel.h; sourceTree = SOURCE_ROOT; };
-		46E186F71943A24800C75240 /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RQShineLabel.m; path = Vendors/RQShineLabel/RQShineLabel.m; sourceTree = SOURCE_ROOT; };
 		46E186FB1943F40600C75240 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46E186FD1943F57100C75240 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		46F8B0151943FCED00FB5BE7 /* NavButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
@@ -172,18 +169,8 @@
 		46E186F31943A1F100C75240 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				46E186F41943A1F700C75240 /* RQShineLabel */,
 			);
 			name = Vendors;
-			sourceTree = "<group>";
-		};
-		46E186F41943A1F700C75240 /* RQShineLabel */ = {
-			isa = PBXGroup;
-			children = (
-				46E186F61943A24800C75240 /* RQShineLabel.h */,
-				46E186F71943A24800C75240 /* RQShineLabel.m */,
-			);
-			name = RQShineLabel;
 			sourceTree = "<group>";
 		};
 		46E186F91943F39C00C75240 /* Controllers */ = {
@@ -310,7 +297,6 @@
 				463ED27119463B6F00256855 /* DraggableView.swift in Sources */,
 				46D4F0951942635500D20017 /* ViewController.swift in Sources */,
 				46D4F0931942635500D20017 /* AppDelegate.swift in Sources */,
-				46E186F81943A24800C75240 /* RQShineLabel.m in Sources */,
 				46E186FE1943F57100C75240 /* Questions.swift in Sources */,
 				46E186FC1943F40600C75240 /* Constants.swift in Sources */,
 				46F8B0161943FCED00FB5BE7 /* NavButton.swift in Sources */,
