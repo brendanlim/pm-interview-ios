@@ -17,5 +17,8 @@ let kNavAnimationDuration = 0.30
 let kNavYPositionBegin = 20.0
 let kNavYPositionEnd = 400.0
 
+let kFadeOutAnimationDuration = 0.25
+let kFadeInAnimationDuration = 0.25
+
 let kDateFormat = "mm:ss"
 let kDefaultTime = "00:00"

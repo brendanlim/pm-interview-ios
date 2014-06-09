@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     // ------------------------------------------------------------------------------
 
     func newQuestionAndResetTime(firstLaunch: Bool = false) {
-        UIView.animateWithDuration(0.25,
+        UIView.animateWithDuration(kFadeOutAnimationDuration,
             delay: 0,
             options: .CurveEaseIn,
             animations: {
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
             }, completion: { finished in
                 self.timeLabel.text = kDefaultTime
 
-                UIView.animateWithDuration(0.25,
+                UIView.animateWithDuration(kFadeInAnimationDuration,
                     delay: 0,
                     options: .CurveEaseIn,
                     animations: {
