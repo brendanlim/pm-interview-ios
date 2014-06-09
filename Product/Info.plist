@@ -28,5 +28,9 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Futura-Medium.ttf</string>
+	</array>
 </dict>
 </plist>

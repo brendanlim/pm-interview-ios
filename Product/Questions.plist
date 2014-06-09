@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>questions</key>
+	<dict>
+		<key>behavioral</key>
+		<array>
+			<string>Tell me about yourself</string>
+			<string>What was the toughest challenge you&apos;ve ever faced?</string>
+			<string>Why do you want to work here?</string>
+			<string>Tell me about the most boring job you&apos;ve ever had</string>
+			<string>Tell me about a time you had to build or motivate a team</string>
+			<string>What makes you angry?</string>
+			<string>What kind of people do you like working with?</string>
+			<string>What types of people have you found difficult to work with?</string>
+			<string>Tell me about a time you had to deal with a teammate who was underperforming</string>
+			<string>What have you learned about saying no?</string>
+			<string>What&apos;s your approach to hiriing?</string>
+			<string>Looking back, what would you do differently in life</string>
+			<string>Tell me about a time you had to use emotional intelligence</string>
+		</array>
+		<key>design</key>
+		<array>
+			<string>How would you design a bookcase for children?</string>
+			<string>How would you design an oven for disabled people?</string>
+			<string>How would you fix toothpaste?</string>
+			<string>How would you design an alarm clock for the blind?</string>
+			<string>How would you design a new Craigslist just for renters and landlords?</string>
+		</array>
+		<key>estimation</key>
+		<array>
+			<string>How much money does McDonalds make every year internationally?</string>
+			<string>How much money is spent on shampoo every year in the U.S.?</string>
+			<string>How many people are flying in the air at this moment?</string>
+			<string>How many reviews does Yelp get every month?</string>
+			<string>How much bandwidth is neeed to support the most popular messaging app?</string>
+			<string>How many iPhones are sold every year?</string>
+		</array>
+	</dict>
+</dict>
+</plist>

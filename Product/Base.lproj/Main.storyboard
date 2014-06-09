@@ -1,25 +1,186 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Product" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-43-1Iu" userLabel="Navigation">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytX-tx-uZC" customClass="NavButton" customModule="Product" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="180" width="275" height="54"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                        <state key="normal" title="Estimation">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="estimation"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseCategory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S9W-rp-q0B"/>
+                                        </connections>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXB-5U-igu" customClass="NavButton" customModule="Product" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="230" width="275" height="54"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                        <state key="normal" title="Design">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="design"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseCategory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fmR-gM-Wbt"/>
+                                        </connections>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0M-V3-FEo" customClass="NavButton" customModule="Product" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="80" width="275" height="54"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                        <state key="normal" title="All">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="all"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseCategory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tpb-HZ-S3T"/>
+                                        </connections>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5de-MU-CfW" customClass="NavButton" customModule="Product" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="130" width="275" height="54"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                        <state key="normal" title="Behavioral">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="behavioral"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseCategory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yWc-wJ-LoF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18134167729591832" green="0.18134167729591832" blue="0.18134167729591832" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="d44-GX-9AT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8W-RA-9v1" userLabel="Content">
+                                <rect key="frame" x="-4" y="20" width="328" height="548"/>
+                                <subviews>
+                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-vj-O1m">
+                                        <rect key="frame" x="23" y="80" width="276" height="389"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="276" id="fLU-QL-hW2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                        <color key="textColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-VC-KLd">
+                                        <rect key="frame" x="20" y="19" width="68" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="tJT-ko-OYH"/>
+                                            <constraint firstAttribute="width" constant="68" id="uPv-Fj-T84"/>
+                                        </constraints>
+                                        <state key="normal" image="Navigation Logo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showNavigation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XLC-yn-6uX"/>
+                                        </connections>
+                                    </button>
+                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-bz-KCV">
+                                        <rect key="frame" x="239" y="24" width="69" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="8mc-JC-cNz"/>
+                                            <constraint firstAttribute="height" constant="21" id="Kq0-8s-iBT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" red="0.73345822704081631" green="0.73345822704081631" blue="0.73345822704081631" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-Go-Eyd">
+                                        <rect key="frame" x="97" y="24" width="130" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="JoM-4c-7gA"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="S1M-Va-xb9"/>
+                                            <constraint firstAttribute="width" constant="130" id="gcw-aW-V4S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AaT-vj-O1m" firstAttribute="top" secondItem="GgJ-bz-KCV" secondAttribute="bottom" constant="35" id="3U5-S3-dpZ"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="top" secondItem="U8W-RA-9v1" secondAttribute="top" constant="19" id="DsW-C8-r9d"/>
+                                    <constraint firstAttribute="bottom" secondItem="AaT-vj-O1m" secondAttribute="bottom" constant="79" id="JU5-E2-WZb"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="top" secondItem="U8W-RA-9v1" secondAttribute="top" constant="19" id="M2K-UR-bD1"/>
+                                    <constraint firstItem="GgJ-bz-KCV" firstAttribute="leading" secondItem="pWT-Go-Eyd" secondAttribute="trailing" constant="12" id="Qow-7g-FXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="GgJ-bz-KCV" secondAttribute="trailing" constant="20" symbolic="YES" id="T81-Rl-fVL"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="leading" secondItem="U8W-RA-9v1" secondAttribute="leading" constant="20" id="VsQ-7B-e0J"/>
+                                    <constraint firstItem="AaT-vj-O1m" firstAttribute="top" secondItem="Yts-VC-KLd" secondAttribute="bottom" constant="31" id="Vt4-ep-HQ5"/>
+                                    <constraint firstItem="pWT-Go-Eyd" firstAttribute="top" secondItem="U8W-RA-9v1" secondAttribute="top" constant="24" id="fGs-74-W0m"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="leading" secondItem="U8W-RA-9v1" secondAttribute="leading" constant="20" id="gYJ-NB-3Y1"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="top" secondItem="U8W-RA-9v1" secondAttribute="top" constant="19" id="h1c-3U-tKe"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="top" secondItem="U8W-RA-9v1" secondAttribute="top" constant="19" id="jW0-IH-H9V"/>
+                                    <constraint firstItem="pWT-Go-Eyd" firstAttribute="leading" secondItem="Yts-VC-KLd" secondAttribute="trailing" constant="9" id="lRK-Ms-eve"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="leading" secondItem="U8W-RA-9v1" secondAttribute="leading" constant="20" symbolic="YES" id="lfD-FU-EMS"/>
+                                    <constraint firstItem="Yts-VC-KLd" firstAttribute="leading" secondItem="U8W-RA-9v1" secondAttribute="leading" constant="20" id="sJ9-Kj-NMW"/>
+                                    <constraint firstItem="AaT-vj-O1m" firstAttribute="leading" secondItem="U8W-RA-9v1" secondAttribute="leading" constant="23" id="zDI-Mf-BRd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U8W-RA-9v1" firstAttribute="bottom" secondItem="ILh-43-1Iu" secondAttribute="bottom" id="HGY-ga-4uQ"/>
+                            <constraint firstAttribute="bottom" secondItem="U8W-RA-9v1" secondAttribute="bottom" id="YXS-o4-lP7"/>
+                            <constraint firstItem="U8W-RA-9v1" firstAttribute="top" secondItem="ILh-43-1Iu" secondAttribute="top" id="iXr-D0-DMv"/>
+                            <constraint firstItem="U8W-RA-9v1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="l4T-1Y-dpo"/>
+                            <constraint firstItem="U8W-RA-9v1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="r2K-BG-Hjv"/>
+                            <constraint firstItem="U8W-RA-9v1" firstAttribute="centerX" secondItem="ILh-43-1Iu" secondAttribute="centerX" id="tNk-1C-Ujd"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="categoryLabel" destination="pWT-Go-Eyd" id="sZS-An-ISQ"/>
+                        <outlet property="contentView" destination="U8W-RA-9v1" id="0Fo-HN-RLT"/>
+                        <outlet property="navigationButton" destination="Yts-VC-KLd" id="whb-CL-Dzp"/>
+                        <outlet property="navigationView" destination="ILh-43-1Iu" id="L5X-Ut-7I2"/>
+                        <outlet property="questionLabel" destination="AaT-vj-O1m" id="Uuc-Vs-rZF"/>
+                        <outlet property="timeLabel" destination="GgJ-bz-KCV" id="O41-2i-2QB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="702" y="511"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Navigation Logo" width="137" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
